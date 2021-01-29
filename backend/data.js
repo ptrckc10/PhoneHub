@@ -1,0 +1,88 @@
+import bcrypt from "bcryptjs";
+
+const data = {
+  users: [
+    {
+      name: "mabuX",
+      email: "admin@example.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: true,
+    },
+    {
+      //customer
+      name: "John",
+      email: "user@example.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: false,
+    },
+  ],
+  products: [
+    {
+      name: "Nike Tshirt",
+      category: "Shirts",
+      image: "/images/p1.jpg",
+      price: 120,
+      countInStock: 0,
+      brand: "Nike",
+      rating: 3.5,
+      numReview: 10,
+      description: "high quality product",
+    },
+    {
+      name: "Adidas Tshirt",
+      category: "Shirts",
+      image: "/images/p2.jpg",
+      price: 100,
+      countInStock: 12,
+      brand: "Adidas",
+      rating: 4.5,
+      numReview: 20,
+      description: "high quality product",
+    },
+    {
+      name: "Zara Long Tee",
+      category: "Shirts",
+      image: "/images/p3.jpg",
+      price: 150,
+      countInStock: 0,
+      brand: "Zara",
+      rating: 4.5,
+      numReview: 15,
+      description: "high quality product",
+    },
+    {
+      name: "Resserved Tshirt",
+      category: "Shirts",
+      image: "/images/p4.jpg",
+      price: 120,
+      countInStock: 19,
+      brand: "Reserved",
+      rating: 4.5,
+      numReview: 9,
+      description: "high quality product",
+    },
+    {
+      name: "H&M Sweat Shirt",
+      category: "Shirts",
+      image: "/images/p5.jpg",
+      price: 170,
+      countInStock: 3,
+      brand: "H&M",
+      rating: 4.5,
+      numReview: 15,
+      description: "high quality product",
+    },
+    {
+      name: "Cotton On Tshirt",
+      category: "Shirts",
+      image: "/images/p6.jpg",
+      price: 180,
+      countInStock: 17,
+      brand: "Cotton On",
+      rating: 5.0,
+      numReview: 5,
+      description: "high quality product",
+    },
+  ],
+};
+export default data;
