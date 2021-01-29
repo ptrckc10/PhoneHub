@@ -4,8 +4,10 @@
 
 ---
 
-git branch -m master main
-git fetch origin
-git branch -u origin/main main
+Notes:
+
+1. git branch -m master main
+2. git fetch origin
+3. git branch -u origin/main main
 
 ---
