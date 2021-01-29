@@ -1,5 +1,6 @@
 import Axios from "axios";
 import {
+  USER_UPDATE_REQUEST,
   USER_UPDATE_SUCCESS,
   USER_UPDATE_FAIL,
   USER_DELETE_REQUEST,
@@ -111,7 +112,7 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
 };
 
 export const updateUser = (user) => async (dispatch, getState) => {
-  dispatch({ type: USER_UPDATE_PROFILE_REQUEST, payload: user });
+  dispatch({ type: USER_UPDATE_REQUEST, payload: user });
   const {
     userSignin: { userInfo },
   } = getState();
