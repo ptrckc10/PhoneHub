@@ -12,8 +12,8 @@ export default function UserEditScreen(props) {
   const userId = props.match.params.id;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [isSeller, setIsSeller] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isSeller, setIsSeller] = useState(`false`);
+  const [isAdmin, setIsAdmin] = useState(`false`);
 
   const userDetails = useSelector((state) => state.userDetails);
   const { loading, error, user } = userDetails;
@@ -94,7 +94,7 @@ export default function UserEditScreen(props) {
                   id="isSeller"
                   type="checkbox"
                   checked={isSeller}
-                  onChange={(e) => setIsSeller(e.target.checked)}
+                  onChange={(e) => setIsSeller(`${e.target.checked}`)}
                 ></input>
                 <span className="slider round"></span>
               </label>
@@ -106,7 +106,7 @@ export default function UserEditScreen(props) {
                   id="isAdmin"
                   type="checkbox"
                   checked={isAdmin}
-                  onChange={(e) => setIsAdmin(e.target.checked)}
+                  onChange={(e) => setIsAdmin(`${e.target.checked}`)}
                 ></input>
                 <span className="slider round"></span>
               </label>
