@@ -64,11 +64,19 @@ export default function ProductListScreen(props) {
   };
   return (
     <div className="container padding">
-      <Link to="/dashboard">
-        <button className="back">
-          <i className="fa fa-arrow-left"></i> Back to Dashboard
-        </button>
-      </Link>
+      {sellerMode ? (
+        <Link to="/">
+          <button className="back">
+            <i className="fa fa-arrow-left"></i> Back to Home
+          </button>
+        </Link>
+      ) : (
+        <Link to="/dashboard">
+          <button className="back">
+            <i className="fa fa-arrow-left"></i> Back to Dashboard
+          </button>
+        </Link>
+      )}
       <div className="row">
         <h1>Products</h1>
         <button type="button" className="primary" onClick={createHandler}>

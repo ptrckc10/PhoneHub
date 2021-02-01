@@ -31,11 +31,19 @@ export default function OrderListScreen(props) {
   };
   return (
     <div className="container padding">
-      <Link to="/dashboard">
-        <button className="back">
-          <i className="fa fa-arrow-left"></i> Back to Dashboard
-        </button>
-      </Link>
+      {sellerMode ? (
+        <Link to="/">
+          <button className="back">
+            <i className="fa fa-arrow-left"></i> Back to Home
+          </button>
+        </Link>
+      ) : (
+        <Link to="/dashboard">
+          <button className="back">
+            <i className="fa fa-arrow-left"></i> Back to Dashboard
+          </button>
+        </Link>
+      )}
       <h1>Orders</h1>
       {loadingDelete && <LoadingBox></LoadingBox>}
       {errorDelete && <MessageBox variant="danger">{errorDelete}</MessageBox>}
