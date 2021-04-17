@@ -2,6 +2,15 @@
 
 3rd Year - 1st Sem (Web Development - MERN project)
 
+------------
+
+npm install the root and npm install in front end then npm start root and npm start front end
+
+
+
+
+
+
 ---
 
 Notes:
