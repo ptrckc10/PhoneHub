@@ -30,14 +30,16 @@ Notes:
 
 ---
 
-If the GitHub repo has seen new commits pushed to it, while you were working locally, I would advise using:
-git pull --rebase
-git push
+1. If the GitHub repo has seen new commits pushed to it, while you were working locally, I would advise using:
+2. git pull --rebase
+3. git push
 
-The full syntax is:
-git pull --rebase origin main
-git push origin main
+4. The full syntax is:
+5. git pull --rebase origin main
+6. git push origin main
 
+7. git push --set-upstream origin main
+8. 
 ---
 
 1. git clone https://github.com/yourUsername/yourRepository.git
