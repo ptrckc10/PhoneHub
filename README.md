@@ -30,6 +30,16 @@ Notes:
 
 ---
 
+If the GitHub repo has seen new commits pushed to it, while you were working locally, I would advise using:
+git pull --rebase
+git push
+
+The full syntax is:
+git pull --rebase origin main
+git push origin main
+
+---
+
 1. git clone https://github.com/yourUsername/yourRepository.git
 2. git add .
 3. git commit -m "Add files via git"
