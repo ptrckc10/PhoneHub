@@ -2,14 +2,9 @@
 
 3rd Year - 1st Sem (Web Development - MERN project)
 
-------------
+---
 
 npm install the root and npm install in front end then npm start root and npm start front end
-
-
-
-
-
 
 ---
 
@@ -39,7 +34,8 @@ Notes:
 6. git push origin main
 
 7. git push --set-upstream origin main
-8. 
+8.
+
 ---
 
 1. git clone https://github.com/yourUsername/yourRepository.git
@@ -49,4 +45,49 @@ Notes:
 
 ---
 
+1. …or create a new repository on the command line
+2. echo "# getmoco" >> README.md
+3. git init
+4. git add README.md
+5. git commit -m "first commit"
+6. git branch -M main
+7. git remote add origin https://github.com/ptrckc10/getmoco.git
+8. git push -u origin main
+9. …or push an existing repository from the command line
+10. git remote add origin https://github.com/ptrckc10/getmoco.git
+11. git branch -M main
+12. git push -u origin main
+
+---
+
 1. git reset --hard
+
+https://www.youtube.com/playlist?list=PLjAJM_6LHbL9FY9nHXgap8G9z8PT1v9Iz
+
+https://www.youtube.com/watch?v=mm5FaZAPLWQ
+
+https://www.youtube.com/user/Dipankar18octable/videos
+
+https://github.com/dipankar-js/Ecommerce-app-PWA-MERN
+
+https://www.youtube.com/watch?v=Nz6Q21ypzT4
+https://www.youtube.com/watch?v=RvEEZLxiAlQ
+
+https://www.youtube.com/watch?v=8NMJxyDwP6A
+
+https://www.youtube.com/watch?v=3C1DZQQLBhU
+
+https://www.youtube.com/watch?v=5Wak0iyGCrc
+
+https://www.youtube.com/watch?v=9X63q9iYB9Q
+
+https://www.youtube.com/playlist?list=PLolX_BtuGc9RI9RDmsy-eAaiyRq2aM6HS
+
+https://www.youtube.com/watch?v=Mos5QJAje28
+
+https://www.youtube.com/watch?v=RkBfu-W7tt0&list=PLMhAeHCz8S38ryyeMiBPPUnFAiWnoPvWP&index=1
+
+https://www.youtube.com/watch?v=6kgitEWTxac <= this
+https://www.youtube.com/watch?v=RvEEZLxiAlQ <= this
+
+https://www.youtube.com/watch?v=xP3cxbDUtrc
