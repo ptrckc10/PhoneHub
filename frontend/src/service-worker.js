@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-restricted-globals */
 
 // This service worker can be customized!
@@ -70,4 +71,35 @@ self.addEventListener("message", (event) => {
   }
 });
 
-// Any other custom service worker logic can go here.
+// TODO: Any other custom service worker logic can go here.
+// importScripts(
+//   "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"
+// );
+
+// if (workbox) {
+//   console.log("workbok loaded", workbox.routing);
+// }
+
+// //to cache the css html js and images files
+// workbox.routing.registerRoute(
+//   /\.(?:js|html|css|images|svg)$/,
+//   new workbox.strategies.NetworkFirst()
+// );
+// workbox.routing.registerRoute(
+//   "http://localhost:3000",
+//   new workbox.strategies.NetworkFirst()
+// );
+
+// //to cache the external api calls
+// workbox.routing.registerRoute(
+//   new RegExp("https://jsonplaceholder.typicode.com/users"),
+//   new workbox.strategies.StaleWhileRevalidate()
+// );
+
+// //to cache the external api calls
+// workbox.routing.registerRoute(
+//   new RegExp(
+//     "http://insight.dev.schoolwires.com/HelpAssets/C2Assets/C2Files/C2ImportUsersSample.csv"
+//   ),
+//   new workbox.strategies.StaleWhileRevalidate()
+// );
